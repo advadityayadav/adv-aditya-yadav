@@ -1,197 +1,310 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#101d33">
-<meta name="description" content="Professional profile of Advocate Aditya Yadav, LL.B., Uttar Pradesh, India.">
+<meta name="theme-color" content="#0b1425">
+<meta name="description" content="Professional profile of Advocate Aditya Yadav, LL.B.">
 <title>Adv. Aditya Yadav | Advocate</title>
+
 <style>
-:root{--navy:#101d33;--gold:#d8b66a;--cream:#f7f5ef;--ink:#243044}
+:root{
+  --navy:#0b1425;
+  --blue:#172b48;
+  --gold:#d9b66c;
+  --cream:#f8f6f0;
+  --ink:#202b3b;
+}
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.75}
-header{background:var(--navy);color:white;padding:18px 6%;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{
+  margin:0;font-family:Arial,Helvetica,sans-serif;
+  line-height:1.75;color:var(--ink)
+}
+header{
+  position:sticky;top:0;z-index:5;
+  background:var(--navy);color:white;
+  padding:15px 6%;display:flex;
+  justify-content:space-between;align-items:center;
+  flex-wrap:wrap;gap:14px;
+  border-bottom:1px solid #5d4c2d
+}
 .brand{font-weight:bold;letter-spacing:1px;color:var(--gold)}
-nav{display:flex;align-items:center;gap:17px;flex-wrap:wrap}
-nav a{color:white;text-decoration:none;font-size:14px}
-button,.button{cursor:pointer;border:1px solid var(--gold);border-radius:5px;padding:10px 15px;font-weight:bold;text-decoration:none;display:inline-block}
-button{background:var(--gold);color:var(--navy)}
-.hero{background:linear-gradient(130deg,#101d33,#233d5b);color:white;padding:65px 7%;display:grid;grid-template-columns:1.25fr .75fr;align-items:center;gap:40px}
-.eyebrow{color:var(--gold);letter-spacing:2px;font-size:13px;font-weight:bold}
-h1{font-size:clamp(38px,5vw,62px);line-height:1.12;margin:15px 0}
-.hero p{color:#e1e7ef;font-size:17px}
-.photo{width:100%;max-width:350px;aspect-ratio:4/5;object-fit:cover;object-position:center 25%;border:3px solid var(--gold);border-radius:10px;justify-self:center;background:#fff}
-.button{margin:8px 7px 0 0}
+.brand small{display:block;color:#dce3ed;font-size:10px;letter-spacing:2px}
+nav{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+nav a{color:white;text-decoration:none;font-size:13px}
+button,.btn{
+  display:inline-block;border:1px solid transparent;
+  border-radius:6px;padding:12px 17px;
+  font-weight:bold;text-decoration:none;cursor:pointer;
+  font-size:14px
+}
+.lang{background:transparent;color:var(--gold);border-color:var(--gold);padding:7px 12px}
+.hero{
+  background:radial-gradient(ellipse at 80% 35%,#2a4160,transparent 45%),
+  linear-gradient(130deg,var(--navy),var(--blue));
+  color:white;padding:65px 8%;
+  display:grid;grid-template-columns:1.15fr .85fr;
+  gap:38px;align-items:center;overflow:hidden
+}
+.kicker{color:var(--gold);font-size:12px;font-weight:bold;letter-spacing:3px}
+h1{font-size:clamp(42px,6vw,70px);line-height:1.1;margin:14px 0}
+.role{color:var(--gold);font-size:20px;font-weight:bold}
+.hero p{color:#e1e7ef;font-size:16px}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
 .gold{background:var(--gold);color:var(--navy)}
-.light{color:white;border-color:#a9b4c5}
-section{padding:60px 8%}
-h2{font-size:30px;color:var(--navy);line-height:1.3;margin:0 0 10px}
-.rule{height:3px;width:55px;background:var(--gold);margin:15px 0 25px}
+.outline{border-color:#9caabd;color:white}
+.portrait-wrap{
+  position:relative;width:100%;max-width:360px;height:440px;
+  justify-self:center;display:flex;align-items:flex-end;
+  justify-content:center
+}
+.halo{
+  position:absolute;bottom:0;right:0;width:92%;height:88%;
+  border:1px solid var(--gold);
+  border-radius:48% 48% 8px 8px;
+  background:linear-gradient(145deg,rgba(217,182,108,.2),transparent)
+}
+.portrait{
+  position:relative;width:100%;height:100%;
+  object-fit:cover;object-position:center 18%;
+  border-radius:48% 48% 8px 8px;
+  filter:drop-shadow(0 18px 28px #0005)
+}
+.photo-label{
+  position:absolute;bottom:16px;left:-10px;
+  background:var(--cream);color:var(--navy);
+  padding:9px 14px;font-size:11px;
+  letter-spacing:1.5px;font-weight:bold
+}
+.trust{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:15px;padding:22px 7%;text-align:center;
+  border-bottom:1px solid #e9e3d8
+}
+.trust strong{display:block;color:var(--navy)}
+.trust span{font-size:12px;color:#697386}
+section{padding:65px 8%}
 .about{background:var(--cream)}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px;margin-top:25px}
-.card{background:white;border:1px solid #e4dfd3;border-radius:8px;padding:22px}
-.card h3{color:var(--navy);margin-top:0}
-.card .num{font-size:23px;color:#b28a39}
-.contact{background:var(--navy);color:white}
-.contact h2{color:var(--gold)}
-.contact a{color:#f0d99e;overflow-wrap:anywhere}
-.contact p{margin:10px 0}
-footer{background:#091322;color:#dce3ed;padding:24px 6%;text-align:center;font-size:13px}
-.small{font-size:12px;opacity:.85}
-@media(max-width:680px){
- .hero{grid-template-columns:1fr;padding:45px 7%;gap:28px}
- .photo{max-width:260px;grid-row:1}
- section{padding:44px 7%}
- header{padding:16px 5%}
- nav{gap:12px}
+.eyebrow{color:#99752e;font-size:11px;letter-spacing:2px;font-weight:bold}
+h2{font-size:clamp(28px,4vw,40px);color:var(--navy);line-height:1.25;margin:8px 0}
+.rule{width:55px;height:3px;background:var(--gold);margin:18px 0 25px}
+.copy{max-width:900px}
+.cards{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+  gap:16px;margin-top:28px
+}
+.card{
+  padding:23px;border:1px solid #e5e0d5;
+  border-radius:9px;background:white;
+  box-shadow:0 8px 24px #15243a08
+}
+.card .num{color:#a77d2e;font-weight:bold;font-size:12px;letter-spacing:2px}
+.card h3{color:var(--navy);margin:10px 0 6px}
+.card p{font-size:14px;color:#606b7a;margin:0}
+.contact{
+  background:linear-gradient(130deg,var(--navy),var(--blue));
+  color:white;text-align:center
+}
+.contact h2{color:white}
+.contact p{color:#dce3ed;max-width:650px;margin:15px auto}
+.contact-buttons{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:28px}
+.whatsapp{background:#20b968;color:white}
+.email{background:var(--gold);color:var(--navy)}
+.notice{font-size:12px!important;color:#c5cfdd!important;margin-top:28px!important}
+footer{background:#070d18;color:#cbd4e2;text-align:center;padding:24px;font-size:12px}
+footer strong{color:var(--gold);letter-spacing:1px}
+@media(max-width:700px){
+  header{padding:14px 5%}
+  nav{gap:10px}
+  .hero{grid-template-columns:1fr;padding:42px 7%;gap:25px}
+  .portrait-wrap{grid-row:1;height:340px;max-width:280px}
+  .hero-copy{grid-row:2}
+  section{padding:48px 7%}
+  .trust{grid-template-columns:1fr;gap:8px}
+  .trust div{padding:8px;border-bottom:1px solid #eee}
 }
 </style>
 </head>
+
 <body>
 <header>
-  <div class="brand">ADV. ADITYA YADAV</div>
+  <div class="brand">
+    ADV. ADITYA YADAV
+    <small>ADVOCATE · LL.B.</small>
+  </div>
   <nav>
     <a href="#about" data-en="About" data-hi="परिचय">About</a>
-    <a href="#practice" data-en="Practice Areas" data-hi="कार्य क्षेत्र">Practice Areas</a>
+    <a href="#practice" data-en="Practice" data-hi="कार्य क्षेत्र">Practice</a>
     <a href="#contact" data-en="Contact" data-hi="संपर्क">Contact</a>
-    <button id="language" type="button">हिन्दी</button>
+    <button class="lang" id="language" type="button">हिन्दी</button>
   </nav>
 </header>
 
 <main>
-<div class="hero">
-  <div>
-    <div class="eyebrow" data-en="ADVOCATE · UTTAR PRADESH, INDIA"
-      data-hi="अधिवक्ता · उत्तर प्रदेश, भारत">ADVOCATE · UTTAR PRADESH, INDIA</div>
-    <h1>Aditya Yadav</h1>
-    <p style="color:#d8b66a;font-weight:bold">LL.B. | Advocate</p>
-    <p data-en="Litigation, Corporate Legal Matters & Legal Documentation"
-      data-hi="वाद-विवाद संबंधी विधिक कार्य, कॉर्पोरेट विधि एवं कानूनी दस्तावेज़ीकरण">
-      Litigation, Corporate Legal Matters & Legal Documentation
-    </p>
-    <p data-en="A considered approach to law, grounded in careful analysis, professional integrity and clarity."
-      data-hi="विधि के प्रति एक विचारपूर्ण दृष्टिकोण, जो गहन विश्लेषण, व्यावसायिक निष्ठा और स्पष्टता पर आधारित है।">
-      A considered approach to law, grounded in careful analysis, professional integrity and clarity.
-    </p>
-    <a class="button gold" href="#about" data-en="Professional Profile" data-hi="व्यावसायिक परिचय">Professional Profile</a>
-    <a class="button light" href="#contact" data-en="Contact Details" data-hi="संपर्क विवरण">Contact Details</a>
+  <div class="hero">
+    <div class="hero-copy">
+      <div class="kicker" data-en="PROFESSIONAL PROFILE" data-hi="व्यावसायिक परिचय">
+        PROFESSIONAL PROFILE
+      </div>
+      <h1>Aditya Yadav</h1>
+      <div class="role" data-en="Advocate | LL.B." data-hi="अधिवक्ता | एल.एल.बी.">
+        Advocate | LL.B.
+      </div>
+      <p data-en="A considered approach to law, grounded in careful analysis, professional integrity and clear communication."
+         data-hi="विधि के प्रति एक विचारपूर्ण दृष्टिकोण, जो गहन विश्लेषण, व्यावसायिक निष्ठा और स्पष्ट संवाद पर आधारित है।">
+        A considered approach to law, grounded in careful analysis, professional integrity and clear communication.
+      </p>
+      <p data-en="Litigation, corporate and commercial legal matters, and legal documentation."
+         data-hi="न्यायालयीन विधिक कार्य, कॉर्पोरेट एवं वाणिज्यिक विधि और कानूनी दस्तावेज़ीकरण।">
+        Litigation, corporate and commercial legal matters, and legal documentation.
+      </p>
+      <div class="actions">
+        <a class="btn gold" href="#about" data-en="Explore Profile ↓" data-hi="परिचय देखें ↓">Explore Profile ↓</a>
+        <a class="btn outline" href="#contact" data-en="Contact Me" data-hi="संपर्क करें">Contact Me</a>
+      </div>
+    </div>
+
+    <div class="portrait-wrap">
+      <div class="halo"></div>
+      <img class="portrait" src="profile.jpg" alt="Advocate Aditya Yadav">
+      <div class="photo-label">ADVOCATE · LL.B.</div>
+    </div>
   </div>
-  <img class="photo" src="profile.jpg" alt="Advocate Aditya Yadav">
-</div>
 
-<section class="about" id="about">
-  <h2 data-en="About Me" data-hi="मेरे बारे में">About Me</h2>
-  <div class="rule"></div>
-  <p data-en="I am Aditya Yadav, an advocate with an LL.B. qualification, based in Uttar Pradesh, India. My professional interests encompass litigation as well as corporate and commercial legal matters."
-    data-hi="मैं आदित्य यादव, एल.एल.बी. योग्यताधारी अधिवक्ता हूँ और उत्तर प्रदेश, भारत में स्थित हूँ। मेरी व्यावसायिक रुचि न्यायालयीन विधिक कार्यों के साथ-साथ कॉर्पोरेट एवं वाणिज्यिक विधि से संबंधित विषयों में भी है।">
-    I am Aditya Yadav, an advocate with an LL.B. qualification, based in Uttar Pradesh, India. My professional interests encompass litigation as well as corporate and commercial legal matters.
-  </p>
-  <p data-en="My approach emphasises careful consideration of facts, a structured understanding of legal issues, precise documentation and clear professional communication. Each matter calls for its own assessment in light of the applicable law and circumstances."
-    data-hi="मेरी कार्यशैली तथ्यों के सावधानीपूर्वक परीक्षण, विधिक प्रश्नों की व्यवस्थित समझ, सटीक दस्तावेज़ीकरण और स्पष्ट व्यावसायिक संवाद पर केंद्रित है। प्रत्येक मामले का मूल्यांकन संबंधित कानून और उसकी परिस्थितियों के अनुरूप किया जाना आवश्यक है।">
-    My approach emphasises careful consideration of facts, a structured understanding of legal issues, precise documentation and clear professional communication. Each matter calls for its own assessment in light of the applicable law and circumstances.
-  </p>
-  <p data-en="This profile presents my professional background and areas of legal interest. Specific qualifications, enrolment particulars and experience may be added after verification."
-    data-hi="यह परिचय मेरे व्यावसायिक स्वरूप और विधिक कार्यक्षेत्रों को प्रस्तुत करता है। विशिष्ट शैक्षणिक विवरण, अधिवक्ता नामांकन संबंधी जानकारी और अनुभव की पुष्टि के बाद उन्हें यहाँ शामिल किया जा सकता है।">
-    This profile presents my professional background and areas of legal interest. Specific qualifications, enrolment particulars and experience may be added after verification.
-  </p>
-</section>
-
-<section id="practice">
-  <h2 data-en="Areas of Legal Practice" data-hi="विधिक कार्यक्षेत्र">Areas of Legal Practice</h2>
-  <div class="rule"></div>
-  <p data-en="Areas relevant to my practice, subject to the nature of each matter and applicable law."
-    data-hi="प्रत्येक मामले की प्रकृति और लागू कानून के अधीन, मेरे कार्यक्षेत्र से संबंधित विषय।">
-    Areas relevant to my practice, subject to the nature of each matter and applicable law.
-  </p>
-  <div class="cards">
-    <article class="card">
-      <div class="num">01</div>
-      <h3 data-en="Civil Litigation" data-hi="दीवानी वाद">Civil Litigation</h3>
-      <p data-en="Civil disputes, legal rights, claims and related court proceedings, as applicable."
-        data-hi="दीवानी विवाद, विधिक अधिकार, दावे तथा उनसे संबंधित न्यायालयीन कार्यवाही, जहाँ लागू हो।">
-        Civil disputes, legal rights, claims and related court proceedings, as applicable.
-      </p>
-    </article>
-    <article class="card">
-      <div class="num">02</div>
-      <h3 data-en="Criminal Law" data-hi="आपराधिक विधि">Criminal Law</h3>
-      <p data-en="Criminal-law matters and related legal proceedings, subject to the applicable law."
-        data-hi="लागू कानून के अधीन आपराधिक विधि से संबंधित विषय और विधिक कार्यवाही।">
-        Criminal-law matters and related legal proceedings, subject to the applicable law.
-      </p>
-    </article>
-    <article class="card">
-      <div class="num">03</div>
-      <h3 data-en="Corporate & Commercial" data-hi="कॉर्पोरेट एवं वाणिज्यिक विधि">Corporate & Commercial</h3>
-      <p data-en="Corporate legal matters, commercial documentation and contractual issues, where applicable."
-        data-hi="जहाँ लागू हो, कॉर्पोरेट विधिक विषय, वाणिज्यिक दस्तावेज़ और अनुबंध संबंधी प्रश्न।">
-        Corporate legal matters, commercial documentation and contractual issues, where applicable.
-      </p>
-    </article>
-    <article class="card">
-      <div class="num">04</div>
-      <h3 data-en="Family Law" data-hi="पारिवारिक विधि">Family Law</h3>
-      <p data-en="Family-related legal issues and proceedings in accordance with applicable law."
-        data-hi="लागू कानून के अनुसार पारिवारिक विधिक विषय और संबंधित कार्यवाही।">
-        Family-related legal issues and proceedings in accordance with applicable law.
-      </p>
-    </article>
-    <article class="card">
-      <div class="num">05</div>
-      <h3 data-en="Legal Drafting" data-hi="विधिक प्रारूपण">Legal Drafting</h3>
-      <p data-en="Preparation and review of legal documents and drafts, as appropriate."
-        data-hi="आवश्यकतानुसार विधिक दस्तावेज़ों एवं प्रारूपों की तैयारी और समीक्षा।">
-        Preparation and review of legal documents and drafts, as appropriate.
-      </p>
-    </article>
-    <article class="card">
-      <div class="num">06</div>
-      <h3 data-en="Legal Documentation" data-hi="विधिक दस्तावेज़ीकरण">Legal Documentation</h3>
-      <p data-en="Legal notices, agreements and related documentation, subject to the nature of the assignment."
-        data-hi="कार्य की प्रकृति के अनुसार विधिक नोटिस, समझौते और संबंधित दस्तावेज़ीकरण।">
-        Legal notices, agreements and related documentation, subject to the nature of the assignment.
-      </p>
-    </article>
+  <div class="trust">
+    <div>
+      <strong data-en="Litigation" data-hi="न्यायालयीन कार्य">Litigation</strong>
+      <span data-en="Legal proceedings" data-hi="विधिक कार्यवाही">Legal proceedings</span>
+    </div>
+    <div>
+      <strong data-en="Corporate & Commercial" data-hi="कॉर्पोरेट एवं वाणिज्यिक">Corporate & Commercial</strong>
+      <span data-en="Business-related legal matters" data-hi="व्यावसायिक विधिक विषय">Business-related legal matters</span>
+    </div>
+    <div>
+      <strong data-en="Legal Documentation" data-hi="विधिक दस्तावेज़ीकरण">Legal Documentation</strong>
+      <span data-en="Drafting and review" data-hi="प्रारूपण एवं समीक्षा">Drafting and review</span>
+    </div>
   </div>
-</section>
 
-<section class="about" id="contact">
-  <h2 data-en="Professional Contact Details" data-hi="व्यावसायिक संपर्क विवरण">Professional Contact Details</h2>
-  <div class="rule"></div>
-  <p data-en="Name: Adv. Aditya Yadav" data-hi="नाम: अधिवक्ता आदित्य यादव">Name: Adv. Aditya Yadav</p>
-  <p data-en="Qualification: LL.B." data-hi="शैक्षणिक योग्यता: एल.एल.बी.">Qualification: LL.B.</p>
-  <p data-en="Location: Uttar Pradesh, India" data-hi="स्थान: उत्तर प्रदेश, भारत">Location: Uttar Pradesh, India</p>
-  <p>Email: <a href="mailto:advyadavaditya@gmail.com">advyadavaditya@gmail.com</a></p>
-  <p>Mobile: <a href="tel:+919453953021">+91 94539 53021</a></p>
-  <p>WhatsApp: <a href="https://wa.me/919453953021" target="_blank" rel="noopener">+91 94539 53021</a></p>
-  <p class="small" data-en="Please do not send confidential documents or sensitive personal information until appropriate arrangements for communication have been established."
-    data-hi="उचित संवाद व्यवस्था स्थापित होने से पहले गोपनीय दस्तावेज़ या संवेदनशील व्यक्तिगत जानकारी न भेजें।">
-    Please do not send confidential documents or sensitive personal information until appropriate arrangements for communication have been established.
-  </p>
-</section>
+  <section class="about" id="about">
+    <div class="eyebrow" data-en="MY PROFESSIONAL APPROACH" data-hi="मेरी व्यावसायिक कार्यशैली">
+      MY PROFESSIONAL APPROACH
+    </div>
+    <h2 data-en="About Me" data-hi="मेरे बारे में">About Me</h2>
+    <div class="rule"></div>
+    <div class="copy">
+      <p data-en="I am Aditya Yadav, an advocate with an LL.B. qualification. My professional interests include litigation as well as corporate and commercial legal matters."
+         data-hi="मैं आदित्य यादव, एल.एल.बी. योग्यताधारी अधिवक्ता हूँ। मेरी व्यावसायिक रुचियों में न्यायालयीन विधिक कार्यों के साथ-साथ कॉर्पोरेट एवं वाणिज्यिक विधि से जुड़े विषय शामिल हैं।">
+        I am Aditya Yadav, an advocate with an LL.B. qualification. My professional interests include litigation as well as corporate and commercial legal matters.
+      </p>
+      <p data-en="My approach emphasises careful consideration of facts, a structured understanding of legal issues, precise documentation and clear professional communication. Each matter deserves an assessment based on its own circumstances and applicable law."
+         data-hi="मेरी कार्यशैली तथ्यों के सावधानीपूर्वक परीक्षण, विधिक प्रश्नों की व्यवस्थित समझ, सटीक दस्तावेज़ीकरण और स्पष्ट व्यावसायिक संवाद पर केंद्रित है। प्रत्येक मामले का मूल्यांकन उसकी परिस्थितियों और लागू कानून के आधार पर किया जाना चाहिए।">
+        My approach emphasises careful consideration of facts, a structured understanding of legal issues, precise documentation and clear professional communication. Each matter deserves an assessment based on its own circumstances and applicable law.
+      </p>
+      <p data-en="This profile provides general professional information. Experience and enrolment details should be added only after verification."
+         data-hi="यह परिचय सामान्य व्यावसायिक जानकारी प्रस्तुत करता है। अनुभव और अधिवक्ता नामांकन संबंधी विवरण सत्यापन के बाद ही जोड़े जाने चाहिए।">
+        This profile provides general professional information. Experience and enrolment details should be added only after verification.
+      </p>
+    </div>
+  </section>
+
+  <section id="practice">
+    <div class="eyebrow" data-en="AREAS OF LEGAL WORK" data-hi="विधिक कार्यक्षेत्र">AREAS OF LEGAL WORK</div>
+    <h2 data-en="Practice Areas" data-hi="विधिक कार्यक्षेत्र">Practice Areas</h2>
+    <div class="rule"></div>
+    <p data-en="The scope of each matter depends on its facts, applicable law and professional requirements."
+       data-hi="प्रत्येक मामले का दायरा उसके तथ्यों, लागू कानून और व्यावसायिक आवश्यकताओं पर निर्भर करेगा।">
+      The scope of each matter depends on its facts, applicable law and professional requirements.
+    </p>
+
+    <div class="cards">
+      <article class="card">
+        <div class="num">01 / CIVIL</div>
+        <h3 data-en="Civil Litigation" data-hi="दीवानी वाद">Civil Litigation</h3>
+        <p data-en="Civil disputes, claims, rights and related proceedings."
+           data-hi="दीवानी विवाद, दावे, अधिकार और संबंधित कार्यवाही।">
+          Civil disputes, claims, rights and related proceedings.
+        </p>
+      </article>
+      <article class="card">
+        <div class="num">02 / CRIMINAL</div>
+        <h3 data-en="Criminal Law" data-hi="आपराधिक विधि">Criminal Law</h3>
+        <p data-en="Criminal-law matters and related legal proceedings."
+           data-hi="आपराधिक विधि से जुड़े विषय और संबंधित विधिक कार्यवाही।">
+          Criminal-law matters and related legal proceedings.
+        </p>
+      </article>
+      <article class="card">
+        <div class="num">03 / CORPORATE</div>
+        <h3 data-en="Corporate & Commercial" data-hi="कॉर्पोरेट एवं वाणिज्यिक">Corporate & Commercial</h3>
+        <p data-en="Corporate matters, commercial documentation and contractual issues."
+           data-hi="कॉर्पोरेट विषय, वाणिज्यिक दस्तावेज़ और अनुबंध संबंधी प्रश्न।">
+          Corporate matters, commercial documentation and contractual issues.
+        </p>
+      </article>
+      <article class="card">
+        <div class="num">04 / FAMILY</div>
+        <h3 data-en="Family Law" data-hi="पारिवारिक विधि">Family Law</h3>
+        <p data-en="Family-related legal issues and proceedings under applicable law."
+           data-hi="लागू कानून के अंतर्गत पारिवारिक विधिक विषय और कार्यवाही।">
+          Family-related legal issues and proceedings under applicable law.
+        </p>
+      </article>
+      <article class="card">
+        <div class="num">05 / DRAFTING</div>
+        <h3 data-en="Legal Drafting" data-hi="विधिक प्रारूपण">Legal Drafting</h3>
+        <p data-en="Preparation and review of legal drafts and documents."
+           data-hi="विधिक प्रारूपों और दस्तावेज़ों की तैयारी एवं समीक्षा।">
+          Preparation and review of legal drafts and documents.
+        </p>
+      </article>
+      <article class="card">
+        <div class="num">06 / DOCUMENTS</div>
+        <h3 data-en="Notices & Agreements" data-hi="नोटिस एवं समझौते">Notices & Agreements</h3>
+        <p data-en="Legal notices, agreements and related documentation."
+           data-hi="विधिक नोटिस, समझौते और संबंधित दस्तावेज़।">
+          Legal notices, agreements and related documentation.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="eyebrow" data-en="LET'S CONNECT" data-hi="संपर्क करें">LET'S CONNECT</div>
+    <h2 data-en="Get in Touch" data-hi="संपर्क करें">Get in Touch</h2>
+    <p data-en="For professional correspondence, choose your preferred contact method below."
+       data-hi="व्यावसायिक संपर्क के लिए नीचे दिए गए माध्यमों में से चुनें।">
+      For professional correspondence, choose your preferred contact method below.
+    </p>
+    <div class="contact-buttons">
+      <a class="btn whatsapp"
+         href="https://wa.me/919453953021?text=Hello%20Adv.%20Aditya%20Yadav%2C%20I%20would%20like%20to%20make%20a%20professional%20enquiry."
+         target="_blank" rel="noopener">◉ WhatsApp</a>
+      <a class="btn email"
+         href="mailto:advyadavaditya@gmail.com?subject=Professional%20Enquiry%20-%20Adv.%20Aditya%20Yadav">✉ Email</a>
+    </div>
+    <p class="notice" data-en="This website provides general professional information and does not constitute legal advice or guarantee any outcome. Please avoid sharing confidential documents before suitable communication arrangements are established."
+       data-hi="यह वेबसाइट सामान्य व्यावसायिक जानकारी देती है, विधिक सलाह या किसी परिणाम की गारंटी नहीं। उचित संवाद व्यवस्था से पहले गोपनीय दस्तावेज़ साझा न करें।">
+      This website provides general professional information and does not constitute legal advice or guarantee any outcome. Please avoid sharing confidential documents before suitable communication arrangements are established.
+    </p>
+  </section>
 </main>
 
 <footer>
   <strong>ADV. ADITYA YADAV</strong>
-  <p data-en="Professional Profile · Uttar Pradesh, India"
-    data-hi="व्यावसायिक परिचय · उत्तर प्रदेश, भारत">Professional Profile · Uttar Pradesh, India</p>
-  <p class="small" data-en="This website provides general professional information and does not constitute legal advice or a guarantee of outcome."
-    data-hi="यह वेबसाइट सामान्य व्यावसायिक जानकारी प्रदान करती है। इसे विधिक सलाह या किसी परिणाम की गारंटी न माना जाए।">
-    This website provides general professional information and does not constitute legal advice or a guarantee of outcome.
-  </p>
+  <p data-en="Professional Profile" data-hi="व्यावसायिक परिचय">Professional Profile</p>
 </footer>
 
 <script>
-let hindi=false;
-document.getElementById("language").addEventListener("click",function(){
-  hindi=!hindi;
-  document.documentElement.lang=hindi?"hi":"en";
-  document.querySelectorAll("[data-en]").forEach(function(el){
-    el.textContent=hindi?el.dataset.hi:el.dataset.en;
+let hindi = false;
+document.getElementById("language").addEventListener("click", function () {
+  hindi = !hindi;
+  document.documentElement.lang = hindi ? "hi" : "en";
+  document.querySelectorAll("[data-en]").forEach(function (el) {
+    el.textContent = hindi ? el.dataset.hi : el.dataset.en;
   });
-  this.textContent=hindi?"English":"हिन्दी";
+  this.textContent = hindi ? "English" : "हिन्दी";
 });
 </script>
 </body>
