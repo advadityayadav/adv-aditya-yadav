@@ -1,41 +1,14 @@
-# StaySathi Android Tablet App — starter project
+# StaySathi Tablet Web/PWA starter
 
-A responsive Hindi/English Android app shell with an original StaySathi brand and a hotel marketplace UI prototype.
+This is a responsive website/PWA starter, not a compiled Android APK.
 
-## What is included
-- Android Studio project (Kotlin Activity + WebView loading local assets)
-- Tablet-responsive UI that also adapts to mobile widths
-- Hindi/English language switch
-- Sample hotel cards, search, category filters, favourites interaction
-- Hotel detail dialog and demo booking request flow
-- Demo host/property enquiry form
-- No API keys or external services required to preview the UI
+## Publish using only your Android tablet
+1. Extract this ZIP using Files or ZArchiver.
+2. In Chrome, open GitHub and create a repository named `staysathi`.
+3. In the repository, choose Add file → Upload files. Upload these five files from this folder: `index.html`, `manifest.webmanifest`, `sw.js`, `icon-192.svg`, and `icon-512.svg`. Commit the changes.
+4. Open repository Settings → Pages. Choose deploy from branch, select `main` and `/ (root)`, then Save.
+5. Open the published HTTPS site in Chrome. Use Chrome menu → Install app or Add to Home screen.
+6. Repeat on other phones/tablets to use the same web app.
 
-## Important limitations
-This is a **working UI prototype**, not a production booking marketplace. Hotel names, ratings, prices and amenities are sample data. Booking requests and host enquiries are stored locally on the device only. Login/OTP, real availability, secure customer accounts, payments/refunds, property-owner dashboard, moderation, notifications, and server database are not connected. Do not accept real customer payments or promise real reservations using this prototype.
-
-## Build an APK in Android Studio
-1. Install Android Studio (recent stable version) and a compatible JDK (Android Studio's bundled JDK is fine).
-2. Open this folder as an existing Android Studio project.
-3. Let Gradle sync. Android Gradle Plugin 8.7.3 requires a compatible Gradle 8.9+ distribution; Android Studio may offer to download it.
-4. Select **Build > Build Bundle(s) / APK(s) > Build APK(s)**.
-5. The debug APK is typically created at `app/build/outputs/apk/debug/app-debug.apk`.
-
-This source package does not include a compiled APK because APK compilation requires the Android/Gradle build toolchain. Build the APK using the steps above.
-
-## Suggested production architecture
-- Android app: Kotlin + Jetpack Compose or this WebView shell
-- Backend API: authenticated REST API
-- Database: PostgreSQL
-- Auth: phone OTP provider with rate limits and abuse protection
-- Payments: RBI-compliant payment gateway integration; do not store card details
-- Property onboarding: identity/business verification, room inventory, rate plans
-- Booking state machine: hold -> payment pending -> confirmed/failed -> cancelled/refunded
-- Admin portal: property approval, dispute handling, audit logs
-- Privacy: consent, retention/deletion, secure transport, access control, Indian legal/privacy compliance
-
-## Project identity
-- App name: StaySathi
-- Application ID: `com.staysathi.app`
-- Version: `0.1.0`
-- Min Android SDK: 23
+## Demo-only limitations
+Hotel names, ratings, prices and amenities are sample data. Booking and host flows are demos only. No live inventory, secure accounts, payment gateway or backend is connected. Do not accept real bookings/payments until a secure backend is added.

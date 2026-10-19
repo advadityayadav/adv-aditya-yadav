@@ -1,0 +1,30 @@
+{
+  "name": "StaySathi — Hotel Booking",
+  "short_name": "StaySathi",
+  "description": "Find your next stay with StaySathi.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#f7f9f7",
+  "theme_color": "#173f35",
+  "lang": "en-IN",
+  "categories": [
+    "travel",
+    "lifestyle"
+  ],
+  "icons": [
+    {
+      "src": "icon-192.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
